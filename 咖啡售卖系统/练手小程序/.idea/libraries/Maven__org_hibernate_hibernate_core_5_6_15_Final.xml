@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: org.hibernate:hibernate-core:5.6.15.Final">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/../../../../临时/IdeaAllSoftware/maven/apache-maven-3.8.1-bin/apache-maven-3.8.1/repository/org/hibernate/hibernate-core/5.6.15.Final/hibernate-core-5.6.15.Final.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$PROJECT_DIR$/../../../../临时/IdeaAllSoftware/maven/apache-maven-3.8.1-bin/apache-maven-3.8.1/repository/org/hibernate/hibernate-core/5.6.15.Final/hibernate-core-5.6.15.Final-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$PROJECT_DIR$/../../../../临时/IdeaAllSoftware/maven/apache-maven-3.8.1-bin/apache-maven-3.8.1/repository/org/hibernate/hibernate-core/5.6.15.Final/hibernate-core-5.6.15.Final-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

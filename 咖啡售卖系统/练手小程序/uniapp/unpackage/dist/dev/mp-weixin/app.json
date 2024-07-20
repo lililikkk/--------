@@ -1,0 +1,49 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/orders/orders",
+    "pages/me/me",
+    "pages/category/category",
+    "pages/aa/aa"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "大超市",
+    "navigationBarBackgroundColor": "#F3AF28",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "backgroundColor": "#ffffff",
+    "selectedColor": "#F3AF28",
+    "color": "#333333",
+    "borderStyle": "black",
+    "list": [
+      {
+        "iconPath": "/static/icons/home.png",
+        "selectedIconPath": "static/icons/home-active.jpg",
+        "text": "首页",
+        "pagePath": "pages/index/index"
+      },
+      {
+        "iconPath": "/static/icons/category.png",
+        "selectedIconPath": "static/icons/category-active.jpg",
+        "text": "分类",
+        "pagePath": "pages/category/category"
+      },
+      {
+        "iconPath": "/static/icons/order.jpg",
+        "selectedIconPath": "static/icons/order-active.jpg",
+        "text": "订单",
+        "pagePath": "pages/orders/orders"
+      },
+      {
+        "iconPath": "/static/icons/me.jpg",
+        "selectedIconPath": "static/icons/me-active.jpg",
+        "text": "我的",
+        "pagePath": "pages/me/me"
+      }
+    ]
+  },
+  "usingComponents": {}
+}

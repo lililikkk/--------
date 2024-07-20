@@ -1,0 +1,10 @@
+*{
+	box-sizing: border-box;
+}
+
+page{
+	/* 定义根节点的最小高度为 整个窗口的高度 */
+	height: 100%;
+	background-color: #fdfdfd;
+	font-size: 30rpx;
+}

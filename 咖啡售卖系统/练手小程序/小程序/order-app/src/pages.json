@@ -1,0 +1,83 @@
+{
+	"lazyCodeLoading":"requiredComponents",
+	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+		{
+			"path" : "pages/me/me",
+			"style" : 
+			{
+				"navigationBarTitleText" : "我的",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/category/category",
+			"style" : 
+			{
+				"navigationBarTitleText" : "分类",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/orders/orders",
+			"style" : 
+			{
+				"navigationBarTitleText" : "购物车",
+				"enablePullDownRefresh" : false
+			}
+		},
+		{
+			"path" : "pages/info/info",
+			"style" : 
+			{
+				"navigationBarTitleText" : "",
+				"enablePullDownRefresh" : false
+			}
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "black",
+		//导航栏标题
+		"navigationBarTitleText": "大超市",
+		//导航栏背景颜色
+		"navigationBarBackgroundColor": "#ffd100",
+		//下拉显示的窗口背景色
+		"backgroundColor": "#F8F8F8"
+	},
+	"tabBar": {
+		"color": "#666",
+		"backgroundColor": "#fff",
+		"selectedColor": "#ffd100", //选中字体后的颜色
+		"list": [
+				{
+					"iconPath":"static/index.png", //默认图标
+					"selectedIconPath": "static/index-active.png", //高亮图标
+					"text": "首页",
+					"pagePath": "pages/index/index"  //页面路径
+				},
+				{
+					"iconPath":"static/category.png", //默认图标
+					"selectedIconPath": "static/category-avtive.png", //高亮图标
+					"text": "分类",
+					"pagePath": "pages/category/category"  //页面路径
+				},
+				{
+					"iconPath": "static/orders.png", //默认图标
+					"selectedIconPath": "static/orders-active.png", //高亮图标
+					"text": "订单",
+					"pagePath": "pages/orders/orders"  //页面路径
+				},
+				{
+					"iconPath": "static/me.png", //默认图标
+					"selectedIconPath": "static/me-active.png", //高亮图标
+					"text": "我的",
+					"pagePath": "pages/me/me"  //页面路径
+				}
+		]
+	}
+}

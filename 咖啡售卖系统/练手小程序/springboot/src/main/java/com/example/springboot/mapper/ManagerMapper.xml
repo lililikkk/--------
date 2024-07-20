@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.springboot.mapper.ManagerMapper">
+
+    <sql id="Base_Column_List">
+        id,name,eachffid,price,code,avatar,content,userid,time,status
+    </sql>
+
+        <select id="selectAll" resultType="com.example.springboot.entity.Manager">
+            select manager.*, eachff.name as eachffname
+            from manager
+            left join eachff on manager.eachffid = eachff.id
+            <where>
+                <if test="id != null"> and id= #{id}</if>
+                <if test="name != null"> and manager.name like concat('%', #{name}, '%')</if>
+                <if test="eachffid != null"> and eachffid= #{eachffid}</if>
+                <if test="price != null"> and price= #{price}</if>
+                <if test="code != null"> and code= #{code}</if>
+                <if test="avatar != null"> and avatar= #{avatar}</if>
+                <if test="content != null"> and content= #{content}</if>
+                <if test="userid != null"> and userid= #{userid}</if>
+                <if test="time != null"> and time= #{time}</if>
+                <if test="status != null"> and status= #{status}</if>
+            </where>
+            order by id desc
+        </select>
+</mapper>

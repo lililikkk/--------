@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.springboot.mapper.PorderMapper">
+        <select id="page" resultType="com.example.springboot.entity.Porder">
+            select p.*,u.username, u.name as nickname from porder p left join user u on p.userid = u.id
+            <where>
+                <if test="name != null and name != ''">
+                    and p.name  like concat( '%',#{name},'%')
+                </if>
+                <if test="role == '用户'">
+                    and p.userid = #{userId}
+                </if>
+            </where>
+        </select>
+
+</mapper>

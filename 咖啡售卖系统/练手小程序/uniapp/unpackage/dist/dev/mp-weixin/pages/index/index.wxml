@@ -1,0 +1,1 @@
+<u-swiper vue-id="8dd740cc-1" list="{{swipperList}}" bind:__l="__l"></u-swiper>

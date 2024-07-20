@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.springboot.mapper.CarMapper">
+<select id="page" resultType="com.example.springboot.entity.Car">
+   select c.*,m.name as manager,m.avatar as managerAvatar,m.price, u.username as user, u.name as nickname from car c
+   left join manager m on c.managerid = m.id
+   left join user u on c.userid = u.id
+   <where>
+      <if test="name != null and name != ''">
+         and m.name  like concat( '%',#{name},'%')
+      </if>
+      <if test="role == '用户'">
+         and c.userid = #{userId}
+      </if>
+   </where>
+</select>
+
+</mapper>
